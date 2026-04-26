@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Viaggi - Area Riservata</title>
+    <link rel="stylesheet" href="/stile/stile.css">
+    <script src="/script/script_gestione_viaggi.js"  ></script>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="/Scopri_il_Marocco.html"><img src="/immagini/Logo.png" alt="logo"></a>
+        <h1>GESTIONE EROGATORE</h1>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu">
+            <li><a href="/Scopri_il_Marocco.html">Home</a></li>
+            <li id="logoutNav"><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <header class="admin-header">
+        <h1>Pannello Gestione Viaggi</h1>
+        <div id="userInfo">Caricamento utente...</div>
+    </header>
+
+    <main class="admin-container">
+        <section class="formViaggi-section">
+            <h3 id="formViaggi-title">Crea una Nuova Offerta</h3>
+            <div id="formMessageArea" class="form-message-area"></div>
+            
+            <form id="viaggioForm">
+                <input type="hidden" id="viaggioId" name="viaggioId">
+                
+                <div class="formViaggi-group">
+                    <label for="titolo">Titolo Viaggio:</label>
+                    <input type="text" id="titolo" name="titolo" required>
+                </div>
+                <div class="formViaggi-group">
+                    <label for="destinazione">Destinazione:</label>
+                    <input type="text" id="destinazione" name="destinazione" required>
+                </div>
+                <div class="formViaggi-group">
+                    <label for="descrizione">Descrizione:</label>
+                    <textarea id="descrizione" name="descrizione" rows="4" required></textarea>
+                </div>
+                <div class="formViaggi-group">
+                    <label for="immagine_url">URL Immagine:</label>
+                    <input type="text" id="immagine_url" name="immagine_url" placeholder="Es: /immagini/viaggi/merzouga.jpg">
+                </div>
+                <div class="formViaggi-group">
+                    <label for="prezzo">Prezzo (per persona):</label>
+                    <input type="number" id="prezzo" name="prezzo" step="0.01" min="0" required>
+                </div>
+                <div class="formViaggi-group">
+                    <label for="disponibilita">Posti Disponibili:</label>
+                    <input type="number" id="disponibilita" name="disponibilita" min="0" required>
+                </div>
+                <div class="formViaggi-group">
+                    <label for="data_partenza">Data Partenza:</label>
+                    <input type="date" id="data_partenza" name="data_partenza" required>
+                </div>
+                <div class="formViaggi-group">
+                    <label for="data_ritorno">Data Ritorno (opzionale):</label>
+                    <input type="date" id="data_ritorno" name="data_ritorno">
+                </div>
+                
+                <div class="form-action">
+                    <button type="submit" class="pulsante" id="submitBtn">Crea Viaggio</button>
+                    <button type="button" class="pulsante" id="cancelEditBtn">Annulla Modifica</button>
+                </div>
+            </form>
+        </section>
+
+        <hr class="divisore">
+        
+        <!-- Sezione per visualizzare le offerte esistenti -->
+        <section>
+            <h2>Le Tue Offerte Pubblicate</h2>
+            <div id="offerteContainer">
+                <p>Caricamento offerte...</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Area Riservata - Scopri il Marocco</p>
+    </footer>
+
+</body>
+</html>

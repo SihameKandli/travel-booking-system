@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione - Scopri il Marocco</title>
+    <link rel="stylesheet" href="/stile/stile.css">
+    <script src="/script/registrazione.js"  ></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/Scopri_il_Marocco.html"><img src="/immagini/Logo.png" alt="Logo Scopri il Marocco"></a>
+        <h1>SCOPRI IL MAROCCO</h1>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;;</label>
+        
+        <ul class="menu">
+            <li><a href="/Scopri_il_Marocco.html">Home</a></li>
+            <li><a href="/Destinazioni.html">Destinazioni</a></li>
+            <li><a href="/viaggi.html">Viaggi</a></li> 
+            <li><a href="/Cultura.html">Cultura</a></li>
+            <li><a href="/Cucina.html">Cucina</a></li>
+            <li class="current"><a href="/Contatti.html">Contatti</a></li>
+            <li id="logoutNav"><a href="#"  >Logout</a></li>
+        </ul>
+    </nav>
+
+    <header class="title-contatti">
+        <h1>Crea un Nuovo Account</h1>
+    </header>
+
+        <section class="container-log-reg">
+            <h2>Registrazione</h2>
+            <div id="registerMessageArea" class="form-message-area"></div>
+
+            <form id="registerForm">
+                
+                <div class="form-group">
+                    <label for="registerNome"><strong>Nome Completo:</strong></label>
+                    <input type="text" id="registerNome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="registerEmail"><strong>Email:</strong></label>
+                    <input type="email" id="registerEmail" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="registerPassword"><strong>Password (min. 6 caratteri):</strong></label>
+                    <input type="password" id="registerPassword" name="password" minlength="6" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="registerConfirmPassword"><strong>Conferma Password:</strong></label>
+                    <input type="password" id="registerConfirmPassword" name="confirmPassword" required>
+                </div>
+
+                <div class="form-action">
+                    <button type="submit" class="pulsante"><strong>Registrati</strong></button>
+                </div>
+
+            </form>
+            
+            <p class="link">
+                Hai già un account? <a href="/login.html">Accedi</a>
+            </p>
+
+        </section>
+
+    <footer>
+        <p> &copy;2025 Scopri il Marocco. </p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/"><img src="/immagini/facebook.png" alt="facebook" ></a>
+            <a href="https://www.instagram.com/"><img src="/immagini/Instagram.png" alt="instagram" ></a>
+            <a href="https://x.com/"><img src="/immagini/twitter.png" alt="twitter"></a>
+        </div>
+   </footer>
+
+</body>
+</html>

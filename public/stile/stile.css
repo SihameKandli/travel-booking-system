@@ -1,0 +1,2063 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway&display=swap');
+
+
+::selection{
+    background-color: #df7547e5;
+    color: #f7e0c6;
+}
+
+body{
+    margin: 0; 
+    background-color: #F2E6D8; 
+    color: #333; 
+    font-family: sans-serif;
+}
+
+.title1{
+    background-image: url(../immagini/Marocco5.jpg); 
+    height: 50em;
+    background-size: cover; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-attachment: fixed; 
+    background-position: center; 
+}
+
+.title1 h1{
+    color:#fff;  
+    font-size: 5em;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.title1 h1 span{
+    display: block; 
+    text-align: center;  
+}
+
+/* Stili per la NavBar */
+.navbar {
+    position: fixed; 
+    top: 0; /*per ancorare la navbar in alto*/
+    left: 0;
+    padding: 1em; 
+    width: calc(100% - 2em); 
+    background-color: #D47133;
+    display: flex; 
+    align-items: center; 
+    z-index: 1000; 
+    height: 3.2em;
+}
+
+.navbar img{
+    width: 5em;
+    padding-left: 1em;
+}
+
+.navbar img:hover{
+    transform: scale(1.3);
+}
+
+.navbar h1 {
+    padding-left: 1em;;
+    margin: 0; 
+    font-size: 2.5em; 
+    color: #F2E6D8;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+nav ul li{
+    display: inline;  
+    margin: 1em;
+    border-bottom: 2px solid #ffffff00; 
+    transition: 0.3s ease-out; 
+}
+
+/* Evidenzia il link della pagina corrente o al passaggio del mouse */
+nav ul li:hover, .current{
+    border-color:#a33809;
+    transform: scale(1.25);
+}
+
+.menu {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: space-between; 
+    font-size: 1.25em;
+    font-family: 'Raleway', sans-serif;
+    margin-left: auto; 
+}
+
+.menu li a {
+    text-decoration: none; 
+    color: #F2E6D8; 
+    font-family: sans-serif; 
+}
+
+/* --- Stili per il Menu Responsive (Hamburger Menu) --- */
+.menu-icon {
+    display: none; 
+}
+
+#menu-toggle{
+    display: none;   
+}
+
+p{
+    line-height: 1.7em;
+}
+
+strong{
+    font-family: 'Playfair Display', sans-serif;
+}
+
+#sec1, #sec2{
+    padding: 6em 15em; 
+}
+
+#sec1{
+    background-color: #fff;
+    color: #222;
+}
+
+#sec1 p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 0.4em;
+    text-align: justify;
+}
+
+#sec1 h2{
+    font-size: 3em;
+    text-transform: uppercase; 
+    margin-top: 0; 
+    font-family: 'Playfair Display', sans-serif;
+}
+
+#sec2 h2{
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+#sec2 p{
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin-bottom: 0.4em;
+    text-align: center;
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 3em;
+    margin-top: 3em;
+}
+
+.image-container{
+    position: relative;
+    overflow: hidden; 
+    border-radius: 8px;
+}
+
+#sec2 img{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    display: block; 
+}
+
+/* Stile per il testo sopra le immagini */
+.overlay-text{
+    position: absolute; 
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-out;
+}
+
+.overlay-destinazioni{
+    background-color: #228997a2; 
+}
+
+.overlay-cultura{
+    background-color: #c752529f; 
+}
+
+.overlay-sapori{
+    background-color: #dba15491; 
+}
+
+/* Mostra il testo quando si passa sopra l'immagine */
+.image-container:hover .overlay-text{
+    top: 0;
+}
+
+.overlay-text p{
+    margin: 1em;
+    font-weight: 300;
+    text-align: center;
+    color: #F2E6D8;
+    font-size: 2em;
+}
+
+.overlay-text a{
+    background-color: #fff;
+    color: #222;
+    padding: 0.2em 0.8em; 
+    border: 2px solid #fff;
+    transition: 0.3s ease-out;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.overlay-text a:hover{
+    background-color: #ffffff00; 
+    color: #fff;
+}
+
+footer{
+    padding: 2em;
+    background-color: #D47133;
+}
+
+footer p{
+    text-align: center;
+}
+
+.social-icons{
+    width: 100%;
+    text-align: center;
+}
+
+.social-icons a{
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    margin: 0.3em;
+}
+
+.social-icons img{
+    width: 100%;
+    transition: 0.3s ease-out;
+}
+
+.social-icons img:hover{
+    transform: scale(1.2);
+}
+
+/*Responsive HomePage*/
+@media screen and (max-width:768px) {
+
+    .menu-icon {
+        display: block; 
+        font-size: 2em; 
+        color: #F2E6D8;
+        cursor: pointer; 
+        margin-left: auto; 
+    }
+
+    .menu {
+        display: none;  
+        flex-direction: column; 
+        background-color: #D47133; 
+        padding: 1em 0; 
+        height: auto;
+        right: 0; 
+        position: absolute; 
+        top: 100%; 
+        border-radius: 0em 0em 1em 1em;
+    }
+
+    .menu li {
+        width: auto;
+        text-align: center;
+    }
+
+    #menu-toggle:checked ~ .menu {
+        display: flex; /* Mostra il menu quando il checkbox è selezionato */
+    }
+
+    .navbar h1 {
+        font-size: 1.8em; 
+        padding-left: 1.5em;
+    }
+
+    .navbar img {
+        width: 4em; 
+    }
+
+    .title1 {
+        height: 25em;
+    }
+
+    .title1 h1 {
+        font-size: 3em;
+        text-align: center;
+        line-height: 1.2em;
+    }
+
+    #sec1, #sec2, #sec3 {
+        padding: 4em 5%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr; 
+        gap: 2em;
+    }
+
+    #sec2 img {
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .overlay-text p {
+        font-size: 1.5em;
+    }
+
+    .overlay-text a {
+        font-size: 1em;
+        padding: 0.4em 1em;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 1em;
+    }
+
+}
+
+
+
+
+/*Cucina*/
+
+.title2{
+    background-image: url(../immagini/piatti1.png); 
+    height: 50em;
+    background-size: cover; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-attachment: fixed; 
+    background-position: center; 
+    text-align: center;
+}
+
+.title2 h1{
+    color:#fff;  
+    font-size: 5em;
+    font-family: 'Playfair Display', sans-serif;  
+}
+
+.title2 h1 span{
+    display: block; 
+    text-align: center;  
+}
+
+#sec3{
+    background-color: #fff;
+    color: #222;
+    text-align: justify;
+    padding: 2em 3em; 
+    max-width: 1200px; 
+    margin: 3em auto; 
+}
+
+#sec3 p{
+    font-size: 0.9em;
+}
+
+#sec3 h2{
+    font-size: 3em;
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 0.2em; 
+    text-transform: uppercase;
+    margin-top: 0;
+    text-align: left;
+}
+
+#sec3 h3{
+    font-size: 3em;
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 0.5em; 
+    color: #a33809;
+}
+
+#pannel{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1em; 
+}
+
+#pannel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease-out;
+    border-radius: 10px; 
+}
+
+#pannel img:hover{
+    transform: scale(1.03); 
+}
+
+#el1 {
+    grid-column: span 2; 
+    font-size: 1.3em;
+    margin-bottom: 2.5em;
+}
+
+#el3, #el4, #el7, #el8, #el11, #el12{ /*stili per i blocchi di testo*/
+    background-color: #ffefddde;
+    padding: 2em; 
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+
+/*Responsive Cucina*/
+
+@media screen and (max-width: 768px) { 
+
+    #pannel {
+        grid-template-columns: 1fr; 
+        gap: 2em; 
+    }
+
+     #el1 { 
+        grid-column: span 1; 
+        order: 0; /* Primo elemento */
+    }
+
+    .title2 {
+        height: 25em;
+    }
+
+    .title2 h1 {
+        font-size: 3em;
+        text-align: center;
+        line-height: 1.2em;
+    }
+
+    #el1 h2 {
+        font-size: 2.3em;
+        margin-top: 0.5em;
+        text-align: center;
+    }
+
+    #el3 h3, #el4 h3, #el7 h3, #el8 h3, #el11 h3, #el12 h3{
+        text-align: center;
+        margin-top: 0;
+    }
+
+    /* Piatto Tajine */
+    #el2 { order: 1; } 
+    #el3 { order: 2; } 
+
+    /* Piatto Pastilla */
+    #el5 { order: 3; } 
+    #el4 { order: 4; }
+
+    /* Piatto CousCous*/
+    #el6 { order: 5; } 
+    #el7 { order: 6; } 
+
+    /* Piatto Tè */
+    #el9 { order: 7; } 
+    #el8 { order: 8; } 
+
+    /* Piatto Ghriba */
+    #el10 { order: 9; } 
+    #el11 { order: 10; } 
+
+    /* Piatto Pane */
+    #el13 { order: 11; } 
+    #el12 { order: 12; } 
+    
+}
+
+
+
+
+/*Destinazioni*/
+
+.title3{
+    background-image: url(../immagini/destinazioni.png); 
+    background-position: center ;
+    height: 50em;
+    background-size: cover; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-attachment: fixed; 
+    text-align: center;
+}
+
+.title3 h1{
+    color:#fff;  
+    font-size: 5em;
+    font-family: 'Playfair Display', sans-serif;  
+}
+
+.title3 h1 span{
+    display: block; 
+    text-align: center;  
+}
+
+
+#intro-destinazioni, #lista-destinazioni { 
+    padding: 2em 3em; 
+    max-width: 1200px; 
+    margin: 0 auto 3em auto; 
+}
+
+#intro-destinazioni p {
+    font-size: 1.3em; 
+    color: #000000;     
+    text-align: center; 
+    line-height: 1.5em;
+}
+
+#intro-destinazioni h2, #lista-destinazioni h2 { 
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 1em; 
+    color: #333; 
+}
+
+.destination{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 3em; 
+    align-items: center;
+    margin-bottom: 2.5em;
+}
+
+.destination-image{
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 8px;
+    height: 350px;
+}
+
+.mini-slider {
+    position: relative; 
+    width: 100%;
+    height: 100%; 
+}
+
+.mini-slider img.slide {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    display: none; 
+}
+
+.mini-slider img.slide.active-slide {
+    display: block; /* Mostra solo la slide attiva */
+}
+
+
+.slider {
+    position: absolute;
+    top: 45%; 
+    background-color: #00000080;
+    color: white;
+    border: none;
+    padding: 0.8em;
+    cursor: pointer;
+    font-size: 1.2em;
+    z-index: 10; /* assicura che i bottoni siano visualizzati sopra le immagini dello slider */
+    border-radius: 50%;
+}
+
+.slider.prev {
+    left: 10px; 
+}
+.slider.next {
+    right: 10px;  
+}
+.slider:hover {
+    background-color: #000000c2;
+}
+
+
+.destination-text h3 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2em;
+    color: #a33809;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.destination-text p {
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+    text-align: justify; 
+    line-height: 1.5em;
+}
+
+
+.pulsante { 
+    display: inline-block;
+    background-color: #D47133; 
+    color: #F2E6D8;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.pulsante:hover {
+    background-color: #a33809; 
+}
+
+.divisore {
+    border: 0;
+    height: 1px; 
+    background-color: #D47133; 
+    margin: 3em 0; 
+}
+
+
+/* Responsive Destinazioni */
+@media screen and (max-width: 768px) { 
+    .title3 h1 {
+        font-size: 3em; 
+    }
+
+    .title3 {
+        height: 25em;
+        padding: 3em 1em;
+    }
+
+    .destination{
+        grid-template-columns: 1fr; 
+        gap: 2em; 
+    }
+
+    .destination-text {
+        text-align: center; 
+    }
+
+}
+
+
+
+/* Dettaglio Città */
+
+
+.title4, .title5, .title6, .title7, .title9{
+    background-position: bottom;
+    height: 50em;
+    background-size: cover; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-attachment: fixed; 
+    text-align: center;
+}
+
+.title4{  /*Marrakech*/
+    background-image: url(../immagini/Marrakech.png); 
+}
+
+.title5{ /*Agadir*/
+    background-image: url(../immagini/Agadir3.png); 
+}
+
+.title6{ /*Chefchaouen*/
+    background-image: url(../immagini/chefchaouen11.jpg); 
+}
+
+.title7{ /*Casablanca*/
+    background-image: url(../immagini/casablanca3.jpg); 
+}
+
+.title9{ /*Rabat*/
+    background-image: url(../immagini/rabat.png); 
+}
+
+.title4 h1, .title5 h1, .title6 h1, .title7 h1, .title9 h1{
+    color:#fff;  
+    font-size: 7em;
+    font-family: 'Playfair Display', sans-serif;  
+}
+
+.title4 h1 span, .title5 h1 span, .title6 h1 span, .title7 h1 span, .title9 h1 span{
+    display: block; 
+    text-align: center;  
+    font-size: 0.6em;
+}
+
+.dettagli-citta {
+    padding: 2em 3em; 
+    max-width: 1200px; 
+    margin: 0 auto 3em auto; 
+}
+
+.intro-citta {
+    text-align: center;
+    margin: 2em auto 4em auto;
+    max-width: 850px; 
+}
+
+.intro-citta h2 {
+    font-size: 2.8em;
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 0.7em;
+    color: #a33809; 
+}
+
+.intro-citta p {
+    line-height: 1.5em; /*spaziatura tra le righe*/
+    font-size: 1.2em;
+    color: #333; 
+}
+
+.griglia {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 2.5em; 
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+.info-griglia {
+    background-color: #fdfbf7; 
+    padding: 2em 1.5em;
+    box-shadow: 0 6px 8px #00000026;
+    border-radius: 10px;
+}
+
+.info-griglia img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+
+.info-griglia h3 {
+    font-size: 1.5em;
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 0.6em;
+    color: #333;
+}
+
+.info-griglia p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5em;
+}
+
+.attrazioni {
+    margin-bottom: 4em;
+}
+
+.attrazioni h2 {
+    text-align: center;
+    font-size: 2.8em; 
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 1.5em;
+    color: #333;
+}
+
+.attrazioni-card {
+    display: flex;
+    align-items: center; 
+    gap: 2.5em; 
+    margin-bottom: 3.5em;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px #00000026;
+}
+
+
+.attrazioni-image img {
+    width: 540px;
+    height: 350px; 
+    object-fit: cover; 
+    display: block; 
+    border-radius: 10px;
+}
+
+.attrazioni-card .info-attrazioni {
+    flex: 1; /* Il testo occupa lo spazio rimanente */
+    padding: 2em;
+}
+
+.attrazioni-card h3 {
+    font-size: 2em;
+    font-family: 'Playfair Display', sans-serif;
+    margin-top: 1em;
+    margin-bottom: 0.6em;
+    color: #a33809;
+}
+
+.attrazioni-card p {
+    font-size: 1em;
+    line-height: 1.7em;
+    color: #000000;
+}
+
+
+.attivita {
+    margin-bottom: 3em;
+    padding-top: 2em;
+    border-top: 1px solid #eaeaea;
+}
+
+.attivita h2 {
+    text-align: center; 
+    font-size: 2.5em; 
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 1.5em; 
+    color: #333;
+}
+
+.attivita-griglia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.attivita-blocco {
+    background-color: #fdfbf7;
+    border-radius: 8px;
+    box-shadow: 0 6px 8px #00000026;
+}
+
+.attivita-blocco .mini-slider{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.attivita-blocco .mini-slider img.slide {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: none;
+    border-radius: 8px; 
+}
+
+.attivita-blocco .mini-slider img.slide.active-slide {
+    display: block; /* Mostra solo la slide attiva */
+}
+
+.attivita-blocco h4 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.4em;
+    margin-bottom: 0;
+    color: #333;
+    text-align: center;
+}
+
+.attivita-blocco p {
+    font-size: 0.9em;
+    color: #333;
+    line-height: 1.5em;
+    padding: 1.5em;
+    text-align: justify;
+}
+
+.travel-tips {
+    margin-bottom: 3em;
+    padding: 2em;
+    background-color: #f0ebe5; 
+    border-radius: 8px;
+    text-align: justify;
+}
+
+.travel-tips h2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.travel-tips ul {
+    list-style: none; 
+    padding-left: 0;
+}
+
+.travel-tips li {
+    margin-bottom: 0.8em;
+    line-height: 1.6em;
+    color: #333;
+}
+
+.travel-tips li strong {
+    color: #a33809; 
+    font-size: 1.2em;
+}
+
+/* Contenitore Link "Torna Indietro" */
+.link-indietro {
+    text-align: center;
+    margin-top: 3em;
+    padding-bottom: 2em; 
+}
+
+
+
+/* Responsive Dettagli città */
+
+
+@media screen and (max-width: 768px) {
+
+   
+    .title4, .title5, .title6, .title7, .title9 {
+        height: 25em;         
+        padding: 2em 1em;     
+    }
+
+    .title4 h1, .title5 h1, .title6 h1, .title7 h1, .title9 h1 {            
+        font-size: 4em; 
+    }
+
+    .dettagli-citta {
+        padding: 1.5em; 
+    }
+
+    .intro-citta h2, .attrazioni h2, .attivita h2, .travel-tips h2 { 
+        font-size: 2.2em; 
+        margin-bottom: 1em; 
+    }
+
+    .griglia { 
+        grid-template-columns: 1fr; 
+        gap: 1.5em;
+    }
+
+    .info-griglia {      
+        width: 300px;
+        height: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .info-griglia h3 {            
+        font-size: 1.2em;
+        margin-bottom: 0.4em;
+    }
+
+    .attrazioni-card {
+        flex-direction: column; 
+        gap: 1em; 
+        margin: 2em;
+    }
+
+    .attrazioni-card .attrazioni-image { 
+        width: 100%; 
+        height: 350px; 
+    }
+
+    .attrazioni-card .attrazioni-image img {
+        width: 100%;    
+        height: 100%;   
+        object-fit: cover; 
+        display: block;    
+    }
+
+
+    .attrazioni-card .info-attrazioni h3 { 
+        font-size: 1.6em; 
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .attrazioni-card .info-attrazioni p { 
+        text-align: justify; 
+        padding: 0.5em;
+    }
+
+    .attivita-griglia {
+        grid-template-columns: 1fr; 
+        gap: 2em;
+        margin: 3em;
+    }
+
+
+    .attivita-blocco .mini-slider {         
+        height: 280px; 
+    }
+
+
+    .attivita-blocco p {            
+        padding: 2em; 
+        margin-top: 0;
+    }
+
+    .travel-tips h2{    
+        text-align: center; 
+    }
+
+}
+
+
+
+
+/* Cultura */
+
+.title8{
+    background-image: url(../immagini/cultura1.jpg); 
+    background-position: bottom;
+    height: 50em;
+    background-size: cover;  
+    display: flex; 
+    align-items: center;  
+    justify-content: center; 
+    background-attachment: fixed; 
+    text-align: center;
+}
+
+.title8 h1{
+    color:#fff; 
+    font-size: 5em;
+    font-family: 'Playfair Display', sans-serif;  
+}
+
+.title8 h1 span{
+    display: block; 
+    text-align: center;  
+}
+
+.contenuto-cultura{ 
+    padding: 2em 3em; 
+    max-width: 1200px; 
+    margin: 0 auto 3em auto;
+}
+
+.intro-cultura {
+    text-align: center;
+    margin: 1em auto 3.5em auto;
+    max-width: 800px;
+}
+
+.intro-cultura h2 {
+    font-size: 2.6em;
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 0.7em;
+    color: #a33809;
+}
+.intro-cultura p {
+    font-size: 1.2em;
+    line-height: 1.7em;
+    color: #333;
+}
+
+.cultura {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3em;
+}
+
+.cultura .cultura-text h3 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2em;
+    color: #333;
+    margin-top: 0;
+    border-bottom: 2px solid #a33809; 
+    display: inline-block; 
+}
+
+.cultura-text p {
+    font-size: 1em;
+    line-height: 1.8em;
+    color: #333;
+    text-align: justify; 
+}
+
+.cultura-text p strong {
+    color: #a33809;
+}
+
+.cultura-image img {
+    width: 540px;
+    height: 400px; 
+    object-fit: cover; 
+    display: block;
+    border-radius: 10px; 
+}
+
+.cultura-image img:hover{
+    transform: scale(1.01); 
+}
+ 
+
+/* Responsive per la Pagina Cultura*/
+@media screen and (max-width: 768px) {
+
+    .title8{
+        height: 25em;
+    }
+    
+    .title8 h1 { 
+        font-size: 3em; 
+    }
+
+    .cultura {
+        padding: 1.5em 5%;
+    }
+
+    .contenuto-cultura { 
+        padding: 1.5em 5%; 
+    }
+
+    .intro-cultura h2{
+        font-size: 2.2em;
+    }
+
+    .cultura{
+        grid-template-columns: 1fr;
+        gap: 1em;
+        padding: 1em;
+    }
+
+    .cultura .cultura-image img{
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* Stili per la Pagina 404.html */
+.contenitore-404 {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+}
+
+.messaggio-404 {
+    max-width: 700px;
+    margin: 0 auto; 
+}
+
+.titolo-404 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 3.5em; 
+    color: #a33809; 
+    margin-bottom: 0.5em;
+}
+
+.immagine-404 {
+    max-width: 550px; 
+    height: auto;
+    margin: 1em auto 1.5em auto; 
+    display: block; 
+    border-radius: 8px; 
+}
+
+.testo-404 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.6;
+    color: #333; 
+    margin-bottom: 1em;
+}
+
+/* Responsive Pagina 404 */
+@media screen and (max-width: 768px) {
+    
+    .contenitore-404 {
+        padding: 1.5em;
+    }
+
+    .titolo-404 {
+        font-size: 2.5em; 
+    }
+
+    .immagine-404 {
+        max-width: 200px; 
+    }
+
+    .testo-404 {
+        font-size: 1.1em;
+    }
+}
+
+
+
+/* Contatti */
+
+.title-contatti { 
+    color:#a33809;
+    text-align: center;
+    padding: 5.5em 1.25em 0 1.25em
+}
+
+.title-contatti h1 {
+    font-size: 4em;
+    font-family:'Playfair Display', sans-serif;
+}
+
+.container-contatti { 
+    margin-top: 1.5em; 
+    margin-bottom: 2em;
+}
+
+.container-log-reg, /* Login/Registrazione box */
+#infoUserContatti, 
+#contactForm { 
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 8px #00000026;
+    margin: 3em auto;
+    max-width: 550px; 
+}
+
+#logoutNav {
+    display: none; /* Nascondi l'elemento di logout */
+}
+
+#contactForm {
+    display: none; /* Nascondi form di contatto */
+}
+
+.container-log-reg h2 {
+    text-align: center;
+    color: #a33809; 
+    font-size: 3.5em;
+    font-family:'Playfair Display', sans-serif;
+    margin: 0;
+}
+
+.form-group {
+    margin: 2em;
+}
+
+.form-group label {
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+    border-color: #A0522D; 
+    box-shadow: 0 6px 8px #00000026; 
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* --- Messaggi (Successo, Errore, Info) --- */
+.form-message-area {
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.95em;
+}
+
+.form-message-area.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message-area.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.form-message-area.info { 
+    background-color: #d1ecf1;
+    color: #29717e;
+    border: 1px solid #bee5eb;
+    margin-top: 2.5em;
+}
+
+#infoUserContatti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#infoUserContatti p {
+    background-color: #d1ecf1; 
+    color: #0c5460;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin: 0; 
+    text-align: center;
+}
+
+#infoUserContatti p a {
+    font-weight: bold;
+    color: #0c5460; 
+    text-decoration: underline;
+}
+
+#infoUserContatti p a:hover {
+    color: #D2691E; 
+}
+
+#contactForm h3 {
+    text-align: center;
+    color: #a33809; 
+    font-size: 1.8em;
+    margin-bottom: 25px;
+}
+
+#info-contatti {
+    max-width: 800px;
+    margin: 3em auto; 
+    padding: 2.3em;
+    text-align: center;
+}
+
+#info-contatti h2 {
+    color: #a33809; 
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+#info-contatti p {
+    margin-bottom: 10px;
+    font-size: 1.05em;
+    color: #333;
+}
+
+.form-action{
+    text-align: right;
+    margin-top: 1.5em; 
+}
+
+/* --- Responsive Contatti --- */
+@media screen and (max-width: 768px) {
+   
+    .title-contatti h1 {
+        font-size: 2em; 
+    }
+
+    #info-contatti h2{
+        font-size: 1.5em;
+    }
+
+    .container-log-reg,
+    #infoUserContatti,
+    #contactForm {
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* Pagina Visualizza Messaggi Admin */
+.admin-header {
+    background-color: #D47133;
+    color: #e2e8f0; 
+    padding: 1.3em 1.2em; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 8px #00000026;
+}
+
+.admin-header h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2em; 
+    margin: 0 0.5em; 
+}
+
+#adminLogoutButton {
+    color: #ffffff;            
+    cursor: pointer;
+    font-size: 1em;          
+    text-decoration: underline; 
+    margin-left: 1.5em;          
+    background-color: transparent;
+}
+
+#adminLogoutButton:hover{
+    color: #721c24;
+    transform: scale(1.3);
+}
+
+#adminUserInfo {
+    font-size: 1.2em;
+    color: #e2e8f0; 
+}
+
+.admin-container {
+    padding: 2em; 
+    max-width: 1200px; 
+    margin: 0 5em; 
+    color: #000;
+}
+
+.admin-container h2{
+    font-size: 3em;
+    color: #D2691E; 
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+/* Messaggio di stato (Caricamento, Nessun messaggio) */
+#adminMessageStatus {
+    text-align: center;
+    margin-bottom: 3em;
+    font-size: 2.5em;
+}
+
+#adminMessageStatus.error { 
+    color: #c53030; 
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+/* Tabella dei messaggi */
+.admin-messages-table {
+    border-collapse: collapse;
+    font-size: 0.95em; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.admin-messages-table th,
+.admin-messages-table td {
+    padding: 14px 18px; 
+    text-align: left;
+    border: 1px solid #A0522D; 
+    color: #000; 
+}
+
+.admin-messages-table th { 
+    background-color: #dd824a; 
+    color: #f7fafc; 
+    text-align: center;
+    font-size: 1em; 
+    text-transform: uppercase; 
+}
+
+.admin-messages-table tr:hover{
+    background-color: #ffdfccc9; 
+    cursor: pointer;
+}
+
+.col-data-invio {
+    min-width: 130px;   
+    text-align: center;  
+}
+
+/* card per il responsive */
+.message-cards {
+    display: none;
+}
+
+.message-card {
+    background: #fff;
+    border: 2px solid #dd824a;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.message-card:hover {
+    background-color: #ffe9dda3;
+    cursor: pointer;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.8em;
+    border-bottom: 2px solid #ddd;
+}
+
+.card-name {
+    font-size: 1.1em;
+    color: #A0522D;
+}
+
+.card-date {
+    font-size: 0.9em;
+    color: #666;
+    background: #f0f0f0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-left: 1em;
+}
+
+.card-info {
+    margin-bottom: 0.8em;
+}
+
+.card-info-row {
+    display: flex;
+    margin-bottom: 0.4em;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-label {
+    color: #dd824a;
+    min-width: 80px;
+    margin-right: 10px;
+}
+
+.card-message {
+    background: #f9f9f9;
+    padding: 1em;
+    border-radius: 6px;
+    border-left: 4px solid #dd824a;
+}
+
+.card-message-label {
+    color: #dd824a;
+    margin-bottom: 0.5em;
+}
+
+
+
+/* Responsive Visualizza Messaggi Admin*/
+@media screen and (max-width: 768px) {
+    
+   .admin-header {
+        padding: 1em 0.8em;
+    }
+
+    .admin-header h1 {
+        font-size: 1.5em;
+        margin: 0 0 0.5em 0;
+    }
+
+    #adminUserInfo {
+        font-size: 1em;
+        margin-bottom: 0.5em;
+        text-align: left;
+        padding-right: 0;
+    }
+
+    #adminLogoutButton {
+        font-size: 0.9em;
+        margin-left: 0;
+    }
+
+    .admin-container {
+        padding: 1.5em 1em;
+    }
+
+    .admin-container h2 {
+        font-size: 1.8em;
+        margin-bottom: 1em;
+    }
+
+    #adminMessageStatus {
+        font-size: 1.2em;
+        margin-bottom: 1.5em;
+        padding: 10px;
+    }
+
+    /* Nascondi la tabella su mobile */
+    .admin-messages-table {
+        display: none;
+    }
+
+    /* Mostra le card su mobile */
+    .message-cards {
+        display: block;
+    }
+
+}
+
+
+
+
+
+
+
+/* NavBar */
+#miePrenotazioni,
+#gestioneViaggi,
+#loginNav,
+#logoutNav {
+    display: none;
+}
+
+/* Stili per i pulsanti */
+.delete-btn { 
+    background-color: #c75252; 
+}
+
+#cancelEditBtn { 
+    display: none; 
+    background-color: #777; 
+}
+
+.form-group-prenotazione input[type="number"] { 
+    width: 60px; 
+    padding: 5px; 
+}
+
+.card-action { 
+    text-align: right; 
+    margin-top: 1em; 
+}
+
+/* Stili per il feedback di prenotazione */
+.sold-out-feedback { 
+    color: red; 
+    font-weight: bold; 
+}
+
+.prenota-feedback.success { 
+    color: green; 
+}
+
+.prenota-feedback.error { 
+    color: red; 
+}
+
+
+/* STILI PER LA PAGINA VIAGGI */
+
+/* Header della pagina */
+.Viaggi {
+    padding-top: 8em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.Viaggi h1 {
+    font-family: 'Playfair Display', sans-serif;
+    color: #a33809;
+    font-size: 3.5em;
+    margin: 0;
+}
+
+/* Card delle offerte di viaggio */
+#viaggi-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.attrazioni-viaggi {
+    display: flex;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(44, 44, 84, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.attrazioni-viaggi:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(44, 44, 84, 0.12);
+}
+
+.attrazioni-viaggi .attrazioni-image { 
+    flex: 0 0 45%; /* L'immagine occupa il 45% della larghezza... */
+}
+
+.attrazioni-viaggi .attrazioni-image img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+}
+
+.attrazioni-viaggi .info-attrazioni { 
+    flex: 1 1 55%;  /* ...e il testo occupa il restante 55% */
+    padding: 2em 2.5em; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.attrazioni-viaggi .info-attrazioni h3 { 
+    font-family: 'Playfair Display', sans-serif; 
+    font-size: 1.9em; 
+    color: #a33809; 
+    margin: 0 0 0.75em 0; 
+}
+
+.attrazioni-viaggi .info-attrazioni p { 
+    font-size: 0.95em; 
+    line-height: 1.6; 
+    color: #555; 
+    margin: 0 0 0.5em 0; 
+}
+
+.attrazioni-viaggi .info-attrazioni hr { 
+    margin-top: auto; 
+    margin-bottom: 1.5em; 
+    border: none; 
+    height: 1px; 
+    background-color: #f0f0f0; 
+}
+
+.attrazioni-viaggi .form-group { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 0 0 1em 0; 
+}
+
+.attrazioni-viaggi .form-group input { 
+    width: 65px; 
+    padding: 0.6em; 
+    border: 1px solid #333333d3; 
+    border-radius: 8px; 
+    text-align: center; 
+}
+
+.attrazioni-viaggi .prenota-btn { 
+    width: 100%; 
+    padding: 0.8em; 
+    font-size: 1.05em; 
+    font-weight: bold; 
+}
+
+.attrazioni-viaggi .prenota-feedback { 
+    min-height: 1.2em; 
+    text-align: center; 
+    margin-top: 1em; 
+}
+
+
+/*   STILI PER IL FORM DI GESTIONE VIAGGI   */
+
+/* --- Contenitore del pannello del Form --- */
+.formViaggi-section {
+    background-color: #ffffff;
+    padding: 2.5em;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+    margin-bottom: 3em;
+}
+
+#formViaggi-title {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2.2em;
+    color: #333;
+    margin: 0 0 1.5em 0;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #D47133;
+}
+
+/* Stili per il form di creazione/modifica viaggi */
+#viaggioForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em 2em;
+}
+
+.formViaggi-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    color: #555;
+}
+
+.formViaggi-group input[type="text"],
+.formViaggi-group input[type="number"],
+.formViaggi-group input[type="date"],
+.formViaggi-group textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.formViaggi-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/* --- Pulsanti del Form --- */
+.form-action {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.form-action .pulsante {
+    padding: 0.8em 1.8em;
+}
+
+
+/*  STILI PER LA PAGINA "MIE PRENOTAZIONI"  */
+.title-prenotazioni { 
+    color:#a33809;
+    text-align: center;
+    padding: 5.5em 1.25em 0 1.25em
+}
+
+.title-prenotazioni h1 {
+    font-size: 4em;
+    font-family:'Playfair Display', sans-serif;
+}
+
+
+#prenotazioni-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    max-width: 900px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: 6em;
+    padding: 1em;
+}
+
+.page-title {
+    text-align: center;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2.8em;
+    color: #a33809;
+    margin-bottom: 1em;
+}
+
+.messagePrenotazioni-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    border-left: 5px solid #D47133;
+    padding: 1.5em 2em;
+    position: relative;
+}
+
+.messagePrenotazioni-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.cardPrenotazioni-name { 
+    font-size: 1.3em; 
+    font-weight: 600; 
+    color: #333; 
+}
+
+.cardPrenotazioni-date { 
+    font-size: 0.85em; 
+    color: #777; 
+    background-color: #f5f5f5; 
+    padding: 0.3em 0.7em; 
+    border-radius: 20px; 
+    position: absolute;
+    top: 1.5em;
+    right: 2em;
+}
+
+.cardPrenotazioni-info { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 0.5em 1.5em; 
+    font-size: 0.95em; 
+}
+
+.cardPrenotazioni-info p { 
+    margin: 0; 
+    color: #555; 
+}
+
+.cardPrenotazioni-info p strong { 
+    color: #333;
+}
+
+/*  STILI PER LA LISTA OFFERTE NELLA GESTIONE VIAGGI  */
+section h2 {
+    text-align: center;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2.5em;
+    color: #a33809;
+    margin-top: 2em;
+    margin-bottom: 1.2em;
+}
+
+#offerteContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.messageViaggi-card {
+    display: flex;
+    align-items: center;
+    padding: 1.2em 1.5em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    border-left: 5px solid #dd824a;
+    transition: all 0.2s ease;
+}
+
+.messageViaggi-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.09);
+}
+
+.cardViaggi-name { 
+    font-weight: 600; 
+    color: #2D3748; 
+}
+
+.cardViaggi-info { 
+    font-size: 0.9em; 
+    color: #666; 
+    margin: 0 1.5em; 
+}
+
+.cardViaggi-action .pulsante { 
+    margin-left: 0.5em; 
+    padding: 0.6em 1.2em; 
+    font-size: 0.9em; 
+    border-radius: 8px; 
+    border: none; 
+    cursor: pointer; 
+    font-weight: 500; 
+}
+
+.cardViaggi-action .edit-btn {
+    background-color: #E2E8F0; 
+    color: #D47133; }
+
+.cardViaggi-action .edit-btn:hover { 
+    background-color: #D47133; 
+    color: white; 
+}
+
+.cardViaggi-action .delete-btn { 
+    background-color: #FED7D7; 
+    color: #9B2C2C; 
+}
+
+.cardViaggi-action .delete-btn:hover { 
+    background-color: #c75252; 
+    color: white; 
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* --- Responsive per i Titoli di Pagina --- */
+    .Viaggi h1 {
+        font-size: 2.5em;
+    }
+
+    .title-prenotazioni,
+    .Viaggi {
+        padding-top: 5em;
+        padding-bottom: 1em;
+    }
+    
+    /* --- Responsive per la Pagina Viaggi --- */
+    #viaggi-container {
+        padding: 1em;
+    }
+    .attrazioni-viaggi {
+        flex-direction: column;
+    }
+    .attrazioni-viaggi .attrazioni-image {
+        height: 240px;
+    }
+    .attrazioni-viaggi .info-attrazioni {
+        padding: 1.5em;
+    }
+    .attrazioni-viaggi .info-attrazioni h3 {
+        font-size: 1.6em;
+    }
+    
+    /* --- Responsive per la Pagina "Mie Prenotazioni" --- */
+    .cardPrenotazioni-date {
+        position: static; /* Riporta la data nel flusso normale */
+        align-self: flex-start; /* La allinea a sinistra */
+        margin-top: 0.5em;
+    }
+    .cardPrenotazioni-name {
+        padding-right: 0; /* Rimuove lo spazio extra che non serve più */
+    }
+    .cardPrenotazioni-info {
+        padding-top: 1em;
+        border-top: 1px solid #f0f0f0;
+    }
+    
+    /* --- Responsive per la Pagina "Gestione Viaggi" --- */
+    #viaggioForm {
+        grid-template-columns: 1fr; /* Form su una colonna */
+    }
+    .messageViaggi-card {
+        flex-direction: column; /* Card su più righe */
+        gap: 1em;
+    }
+    .messageViaggi-card .cardViaggi-info {
+        margin: 0;
+        padding-top: 1em;
+        border-top: 1px solid #f0f0f0;
+    }
+    .messageViaggi-card .cardViaggi-action {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end; /* Allinea a destra */
+    }
+
+    /* --- Regola per le card in colonna --- */
+    .messagePrenotazioni-card {
+        flex-direction: column;
+        gap: 1em;
+        margin-left: 2em;
+    }
+
+}
