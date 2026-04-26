@@ -19,5 +19,5 @@ Applicazione web fullstack per la gestione di viaggi e prenotazioni.
 ## Avvio progetto
 
 1. `npm install`
-2. Avvia database MySQL
+2. Importa `database/script.sql` in MySQL
 3. `node server.js`
